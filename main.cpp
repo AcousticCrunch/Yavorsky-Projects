@@ -1,3 +1,5 @@
+#
+
 #include <iostream>
 #include "distance.h"
 
@@ -12,19 +14,9 @@ int main() {
     Distance d5(-5, -16, 697, -51);
     Distance d6(-159609);
 
-//    cout << d2;
-//    cout << d3;
-
-
-//    cout << d3--;
-//    cout << d3;
-//
-//    if (d2 == d3)
-//        cout << "True";
-//    else
-//        cout << "False";
-
     cout << ++d2;
+    cout << d2 - d5;
+  
 
     return 0;
 }
