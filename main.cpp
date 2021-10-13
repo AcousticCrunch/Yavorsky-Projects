@@ -16,6 +16,8 @@ int main() {
 
     cout << ++d2;
     cout << d2 - d5;
+    cout << d2 * d5;
+    cout << d6 + d1;
   
 
     return 0;
