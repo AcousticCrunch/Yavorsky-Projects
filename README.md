@@ -8,9 +8,9 @@ I utilized an underlying array to achieve fast and efficient data storage and re
 
 Features:
 
-* Comprehensive Member Functions
+* Comprehensive member functions
 
-* Iterator Return Functions
+* Iterator return functions
 
 * Template-based data structure
 
