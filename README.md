@@ -6,8 +6,10 @@ This is a Linked List library built from the ground up.
 
 Features:
 
-* Custom Nodes
+* Custom Nodes (nested structure)
 
-* Iterator Operator Overloads
+* Iterator operator overloades
+
+* Template-based
 
 * Comprehensive Member Functions (insert, delete, pop_front, etc.)
