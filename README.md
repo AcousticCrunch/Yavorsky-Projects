@@ -1,7 +1,10 @@
-# Yavorsky-Projects
+# Linked List Project
 
-Welcome to my project repo!
+Welcome to my Linked List project!
 
-Use the branches to navigate my projects!
+This is a Linked List library built from the ground up.
 
-Header and execution files are provided in their respective branches.
+Features:
+Custom Nodes
+Iterator Operator Overloads
+Comprehensive Member Functions (insert, delete, pop_front, etc.)
