@@ -6,8 +6,8 @@ This is a Linked List library built from the ground up.
 
 Features:
 
-*Custom Nodes
+* Custom Nodes
 
-*Iterator Operator Overloads
+* Iterator Operator Overloads
 
-*Comprehensive Member Functions (insert, delete, pop_front, etc.)
+* Comprehensive Member Functions (insert, delete, pop_front, etc.)
