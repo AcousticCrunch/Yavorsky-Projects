@@ -12,4 +12,6 @@ Features:
 
 * Iterator Return Functions
 
+* Template-based data structure
+
 * Array-based bracket [] overload
