@@ -1,7 +1,15 @@
-# Yavorsky-Projects
+# Stack Project
 
-Welcome to my project repo!
+Welcome to my stack-based data structure project!
 
-Use the branches to navigate my projects!
+I utilized an underlying vector to create an in-depth stack data structure.
 
-Header and execution files are provided in their respective branches.
+I use my stack to convert an infix expression to a postfix expression, given by the user.
+
+Features:
+
+* Template-based stack
+
+* Comprehensive member functions (push and move push)
+
+* Boolean comparison operator overloads
