@@ -1,7 +1,4 @@
-# Yavorsky-Projects
+Welcome to TVector!
 
-Welcome to my project repo!
-
-Use the branches to navigate my projects!
-
-Header and execution files are provided in their respective branches.
+This project is a complete Vector class built from the ground up. 
+I modified the default C++ array data structure to achieve this.
