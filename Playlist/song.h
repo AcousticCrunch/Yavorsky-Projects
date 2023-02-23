@@ -1,5 +1,3 @@
-// Bob Myers
-//
 // song.h -- header file for the Song class
 //
 // An object of type Song will store information about a single
