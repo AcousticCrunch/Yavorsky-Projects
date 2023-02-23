@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title> Stories for {{session.userinfo.name}} | Project Nooz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/news.css') }}">    
+  </head>
+  <body>
+    <h1 style="color:#ff6600;text-align:center">Welcome {{session.userinfo.name}}!</h1>
+
+    <p style="text-align:center"><a href="/profile">Profile</a></p>
+
+    {% if session.userinfo.email == "hy20@fsu.edu" or session.userinfo.email == "romail.khan2001@gmail.com" or session.userinfo.email == "chashimahiulislam@gmail.com" %}	
+    <p style="text-align:center"class = "admin"><a href="/admin">Admin</a></p>
+    {% endif %}
+
+    <p style="text-align:center"class = "logout"><a href="/logout">Logout</a></p>
+
+
+    <table style ="width:100%">
+     {% for i in stories %}
+      <tr>
+	<th><form action="https://projectnooz.me/like/{{i[4]}}/{{i[0]}}/{{session.userinfo.name}}">
+	<button type="submit"><div class="upvote"></div></button></form></th>
+        <th class = "title"><a href={{i[1]}} target="_blank"> {{i[0]}} </a></th>
+        <th class = "author"> {{i[2]}} </td>
+ 
+     </tr>
+      <tr style = "border:1px solid black;">
+	<th><form action="https://projectnooz.me/dislike/{{i[4]}}/{{i[0]}}/{{session.userinfo.name}}">
+	<button type="submit"><div class="downvote"></div></button></form></th>
+	<td></td>
+        <td class = "date"> {{i[3]}} </td>
+      </tr>
+      <tr>
+       <td> &nbsp </td>
+       <td> &nbsp </td>
+      </tr>
+	
+
+      {% endfor %}
+    </table>
+  </body>
+</html>
