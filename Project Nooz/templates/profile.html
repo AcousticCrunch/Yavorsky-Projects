@@ -1,0 +1,11 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Profile | Project Nooz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/news.css') }}">
+  </head>
+  <body>
+  <h1 class="profile">Name: {{session.userinfo.name}}</h1>
+	<h1 class="profile">Email: {{session.userinfo.email}} </h2>
+  </body>
+</html>
