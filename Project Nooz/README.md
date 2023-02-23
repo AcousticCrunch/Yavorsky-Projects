@@ -1,10 +1,6 @@
 # Project Nooz
 
-## Configurations
-- SSH and SSHD configurations are found in /etc/ssh
-- Nginx configurations are found in /etc/nginx as well as /etc/sites-enabled
-- Gunicorn configurations are found in /etc/systemd/system
-- Our DNS configuration is located on Cloudflare
+This is the source code for my Flask-based news aggregation website, Project Nooz. It uses the HackerNews API to grab news on a daily basis, and uses authentication to give the user a more individual experience. Currently the website is not being hosted, but the html and Python scripts are all listed in this repo.
 
 [DNS Configuration](https://i.imgur.com/97Qc5d6.png)
 
