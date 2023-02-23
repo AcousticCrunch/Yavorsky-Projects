@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Admin | Project Nooz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/news.css') }}">
+  </head>
+  <body>
+	{% if session.userinfo.email == "hy20@fsu.edu" or session.userinfo.email == "romail.khan2001@gmail.com" %}
+	<h1> Welcome to Admin, {{session.userinfo.name}} </h1>
+	 <p style="text-align:center"class = "stories"><a href="/stories">Stories</a></p>
+		<table style ="width:100%">
+     		{% for i in votedStories %}
+      		<tr>
+        	<th><form action="https://projectnooz.me/delete/{{i[0]}}">
+        	<button type="submit"> X </button></form></th>
+		
+        	<th class = "title"> {{i[1]}} </th>
+        	<th class = "author"> {{i[2]}} </td>
+     		</tr>
+		
+		{% if i[3] == 1 %}
+		<tr>
+                  <td style="color:GREEN">
+                    LIKE 
+                  </td>
+		</tr>
+		{% else %}
+		<tr>
+                  <td style="color:RED"> 
+		     DISLIKE
+                  </td>
+		</tr>
+		{% endif %}
+
+      		<tr>
+       		  <td> &nbsp </td>
+       		  <td> &nbsp </td>
+      		</tr>
+	{% endfor %}
+	{% else %}
+		<h1> GET LOST! </h1>
+
+	{% endif %}	
+
+  </body>
+</html>
